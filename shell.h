@@ -41,7 +41,7 @@ char *find_path(void);
 /* helper function for efficient free */
 void free_buffers(char **buf);
 /**
-* struct builtin
+* struct builtin - set for exit and environment
 * @env: environment
 * @exit: exit return
 * description: added feature
