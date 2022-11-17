@@ -7,11 +7,16 @@
 */
 int _strcmp(char *s1, char *s2)
 {
-int i = 0, output;
-while (*(s1 + i) == *(s2 + i) && *(s1 + i) != '\0')
-i++;
-output = (*(s1 + i) - *(s2 + i));
-return (output);
+int value = 0, i;
+for (i = 0; s1[i] != '\0' || s2[i] != '\0'; i++)
+{
+value = s1[i] - s2[i];
+if (value != 0)
+{
+break;
+}
+}
+return (value);
 }
 /**
 * _strlen - returns the length of a string
@@ -38,7 +43,6 @@ return (count);
 int _strncmp(char *s1, char *s2, int n)
 {
 int i;
-
 for (i = 0; s1[i] && s2[i] && i < n; i++)
 {
 if (s1[i] != s2[i])
