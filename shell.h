@@ -51,13 +51,22 @@ struct builtin
 char *env;
 char *exit;
 } builtin;
-
+/**
+* struct info - adding info
+* @final_exit: environment
+* @ln_count: ln_count
+* description: added feature
+*/
 struct info
 {
 int final_exit;
 int ln_count;
 } info;
-
+/**
+* struct flags - flags structure
+* @interactive: interactive
+* description: added feature
+*/
 struct flags
 {
 bool interactive;
