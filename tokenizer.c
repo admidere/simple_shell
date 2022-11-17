@@ -3,7 +3,6 @@
 /**
 * tokenizer - creates tokens from given input
 * @line: to be tokenized
-*
 * Return: array of strings
 */
 char **tokenizer(char *line)

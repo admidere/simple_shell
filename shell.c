@@ -4,10 +4,8 @@
 * @ac: argument count
 * @av: argument vector
 * @envp: environment vector
-*
 * Return: 0
 */
-
 int main(int ac, char **av, char *envp[])
 {
 char *line = NULL, *pathcommand = NULL, *path = NULL;
