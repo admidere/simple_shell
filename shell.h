@@ -40,7 +40,12 @@ char *find_path(void);
 
 /* helper function for efficient free */
 void free_buffers(char **buf);
-
+/**
+* struct builtin
+* @env: environment
+* @exit: exit return
+* description: added feature
+*/
 struct builtin
 {
 char *env;
